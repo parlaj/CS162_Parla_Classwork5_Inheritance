@@ -4,9 +4,11 @@ public class Main {
 	// write your code here
         Doctor doctor = new Doctor(true);
         Surgeon surgeon = new Surgeon(true);
+
         //call treat patient for doctor and surgeon
         System.out.println(doctor.treatPatient());
         System.out.println(surgeon.treatPatient());
+        //These two methods return different values because treatPatient in Surgeon overrides its parent method
 
         //try calling other methods from the Doctor and Surgeon class
         System.out.println(doctor.isWorksAtHospital());

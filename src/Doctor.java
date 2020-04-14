@@ -16,4 +16,11 @@ public class Doctor {
     public String treatPatient() {
         return "Gives checkups";
     }
+
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "worksAtHospital=" + worksAtHospital +
+                '}';
+    }
 }
